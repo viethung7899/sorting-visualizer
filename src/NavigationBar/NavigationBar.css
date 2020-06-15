@@ -1,0 +1,122 @@
+/* Styling the title */
+.title {
+    background: var(--primary-dark);
+    padding: 1rem;
+}
+
+.title h2 {
+    margin: 0;
+    color: white;
+    font-size: 30px;
+    font-weight: bold;
+}
+
+/* Styling the navigation list */
+.nav-list {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    background-color: var(--primary);
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+/* Styling the navigational items*/
+.nav-item {
+    position: relative;
+    background-color: var(--primary);
+    min-width: 100px;
+    padding: 1rem;
+    flex-grow: 1;
+    z-index: 0;
+    cursor: pointer;
+}
+
+.nav-item:hover {
+    background-color: var(--primary-light);
+}
+
+/* Styling the sorting button */
+#sort {
+    background-color: var(--secondary);
+    z-index: 0;
+}
+
+#sort:hover {
+    background-color: var(--secondary-dark);
+}
+
+/* Styling the text in navigation */
+.nav-item {
+    color: black;
+    font-size: 20px;
+    margin: 0;
+    text-emphasis: bold;
+}
+
+
+/* Styling the dropdown menu */
+.dropdown-menu {
+    list-style: none;
+    position: absolute;
+    display: none;
+    left: 0;
+    top: 55px;
+    width: 100%;
+}
+
+.nav-item:hover .dropdown-menu {
+    display: block;
+    z-index: 1;
+}
+
+.dropdown-item {
+    background-color: var(--primary-light);
+    padding: 0.5rem;
+    z-index: 100;
+}
+
+.dropdown-item:hover {
+    background-color: var(--primary);
+}
+
+/* Styling the slider */
+.slider-container {
+    background-color: var(--primary-light);
+    position: absolute;
+    left: 0;
+    top: 55px;
+    width: 50vw;
+    padding: 0.5rem;
+    display: none;
+}
+
+.slider {
+    -webkit-appearance: none;
+    width: 100%;
+    height: 10px;
+    border-radius: 5px;  
+    background: #d3d3d3;
+    outline: none;
+  }
+
+.slider::-webkit-slider-thumb {
+    appearance: none;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background: var(--primary-dark);
+    cursor: pointer;
+}
+
+.nav-item:hover .slider-container {
+    display: block;
+}
+
+
+
+
+
+
